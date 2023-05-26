@@ -21,10 +21,14 @@ MyPushButton::MyPushButton(QWidget* parent,bool mask,QString normalImg,QString p
     setIcon(pix);//设置按钮图像
     setIconSize(QSize(pix.width(),pix.height()));//设置图像大小
 }
+MyPushButton::MyPushButton(QWidget* parent,QString name):QPushButton(name,parent)
+{
+    setCursor(Qt::PointingHandCursor);//设置鼠标形状
 
+}
 void MyPushButton::mousePressEvent(QMouseEvent *e)
 {
-    QSound::play(":/res/Res/click_button.mp3");
+    QSound::play(":/res/Res/points.wav");
 
     move(x()+1,y()+1);
 
@@ -49,7 +53,7 @@ void MyPushButton::mouseReleaseEvent(QMouseEvent *e)
 }
 void MyPushButton::enterEvent(QEvent *event)
 {
-    QSound::play(":/res/Res/snap.wav");
+    QSound::play(":/res/Res/plant.wav");
 
     if(pressedImgPath!="")
     {

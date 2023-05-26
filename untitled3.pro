@@ -10,14 +10,18 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Guy2PlayModeChoose.cpp \
     beginscene.cpp \
+    choosemode.cpp \
     main.cpp \
     mainwindow.cpp \
     mypushbutton.cpp
 
 HEADERS += \
+    Guy2PlayModeChoose.h \
     MyPushButton.h \
     beginscene.h \
+    choosemode.h \
     mainwindow.h
 
 FORMS += \

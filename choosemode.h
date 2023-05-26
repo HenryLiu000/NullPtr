@@ -1,6 +1,7 @@
-#ifndef BEGINSCENE_H
-#define BEGINSCENE_H
+#ifndef CHOOSEMODE_H
+#define CHOOSEMODE_H
 
+#endif // CHOOSEMODE_H
 #include<QObject>
 #include <QWidget>
 #include<QImage>
@@ -9,22 +10,19 @@
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include"MyPushButton.h"
-
-class BeginScene : public QWidget
+class ChooseModeScene:public QWidget
 {
     Q_OBJECT
 public:
-    explicit BeginScene(QWidget *parent = 0);
+    explicit ChooseModeScene(QWidget *parent = 0);
     void paintEvent(QPaintEvent *event);
     QSound* bgm;
-    QPushButton *start;
-    QPushButton *setting;
-    QPushButton *rule;
-    QPushButton *Quitgame;
+    QPushButton *Guy2;
+    QPushButton *Guy4;
+    QPushButton *Quit;
 signals:
 
 public slots:
 
-};
 
-#endif // BEGINSCENE_H
+};

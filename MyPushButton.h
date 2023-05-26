@@ -9,6 +9,7 @@ class MyPushButton:public QPushButton{
     Q_OBJECT
 public:
     MyPushButton(QWidget* parent,bool mask,QString normalImg,QString pressedImg="");
+    MyPushButton(QWidget* parent,QString name);
     QString normalImgPath;
     QString pressedImgPath;
     void mousePressEvent(QMouseEvent *e);

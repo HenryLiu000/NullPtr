@@ -10,6 +10,9 @@
         <file>Res/Icon.ico</file>
         <file>Res/battelbgm.wav</file>
         <file>Res/click_button.mp3</file>
+        <file>Res/BackButton.png</file>
+        <file>Res/plant.wav</file>
+        <file>Res/points.wav</file>
     </qresource>
     <qresource prefix="/sound"/>
     <qresource prefix="/Sound"/>
